@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Sakthivel-Selvam-MEAN-Developer/Senchola-JavaScript#readme",
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "poppins": "^0.1.1"
   }
 }

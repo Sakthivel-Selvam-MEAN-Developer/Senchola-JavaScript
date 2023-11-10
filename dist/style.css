@@ -1,0 +1,27 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-nav .nav-item a{
+    font-variant: all-petite-caps;
+    padding: 0 !important;
+}
+.navbar-nav .nav-item a::after{
+    content: '';
+    display: block;
+    border: 1.5px solid #ffc107a4;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 150ms linear;
+}
+.navbar-nav .nav-item:hover a::after{
+    transform: scaleX(1);
+}
+.card{
+    width: 18rem !important;
+    box-shadow: 1px 3px 5px 2px #ffc1078e;
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#4158d0,#c850c0);
+}
