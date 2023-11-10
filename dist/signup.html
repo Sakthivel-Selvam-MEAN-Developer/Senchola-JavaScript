@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
 </head>
+
 <body>
-    
+    <div class="login d-flex flex-column justify-content-center align-items-center bg-light">
+        <div class="login-body bg-light p-5 pt-4 pb-3 rounded">
+            <form action="login.html">
+                <div class="login-title form-title">
+                    <h4 class="text-center">Don't have an Account ?</h4>
+                </div>
+                <div class="form-inputs">
+                    <div class="username-input position-relative">
+                        <input class="form-control rounded-5" type="text" name="username" id="username"
+                            placeholder="Email" required>
+                        <img class="position-absolute" src="mail-default.svg" alt="mail" width="20" id="username-icon">
+                    </div>
+                    <div class="password-input position-relative">
+                        <input
+                            title="Password Must Contains : 7 - 14 Characters &#013 1 Capital Letter &#013 1 Small Letter &#013 1 Number &#013 Password Must not Contains : Special Characters "
+                            class="form-control rounded-5 mb-1" type="password" name="password" id="password"
+                            placeholder="Password" oninput="validatePassword()" required>
+                        <b><span class="position-absolute" id="password-error"></span></b>
+                        <img class="position-absolute" src="pass-defalut.svg" alt="password" width="20"
+                            id="password-icon">
+                    </div>
+                    <div class="password-input position-relative">
+                        <input title="Password Must be Match " class="form-control rounded-5 mb-1" type="password"
+                            name="password" id="confirm-password" placeholder="Confirm Password"
+                            oninput="validatePasswordMatch()" required>
+                        <b><span class="position-absolute" id="confirm-password-error"></span></b>
+                        <img class="position-absolute" src="pass-defalut.svg" alt="password" width="20"
+                            id="password-icon">
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <div class="login-btn mt-4">
+                        <button class="btn btn-success w-100 rounded-5">signup</button>
+                    </div>
+                </div>
+                <div class="signup text-center mt-4">
+                    <a href="login.html" class="text-decoration-none text-black">
+                        <small>Already have an account ?
+                            <img src="arrow.svg" alt="arrow" width="15"> 
+                        </small>
+                    </a>
+                </div>
+            </form>
+        </div>
 </body>
+<script src="index.js"></script>
+
 </html>

@@ -1,9 +1,11 @@
 {
+  "homepage": "https://Sakthivel-Selvam-MEAN-Developer.github.io/Senchola-JavaScript",
   "name": "package.json",
   "version": "1.2.7",
   "description": "Senchola Front End JavaScript Task (10-11-23)",
   "main": "index.js",
   "scripts": {
+    "deploy":"gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +20,9 @@
   "bugs": {
     "url": "https://github.com/Sakthivel-Selvam-MEAN-Developer/Senchola-JavaScript/issues"
   },
-  "homepage": "https://github.com/Sakthivel-Selvam-MEAN-Developer/Senchola-JavaScript#readme",
   "dependencies": {
+    "@fontsource/poppins": "^5.0.8",
     "bootstrap": "^5.3.2",
-    "gh-pages": "^6.0.0",
-    "poppins": "^0.1.1"
+    "gh-pages": "^6.0.0"
   }
 }

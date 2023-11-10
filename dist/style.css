@@ -1,5 +1,7 @@
-body{
-    font-family: 'Poppins', sans-serif;
+@import "../node_modules/@fontsource/poppins/400.css";
+
+*{
+    font-family: Poppins;
 }
 .navbar-nav .nav-item a{
     font-variant: all-petite-caps;
@@ -24,4 +26,77 @@ body{
     width: 100%;
     height: 100vh;
     background: linear-gradient(45deg,#4158d0,#c850c0);
+}
+.login .login-body{
+    background-color: #ffffff6b !important;
+}
+.login input{
+    width: 330px;
+    margin: 27px 0;
+    padding: 7px 7px 7px 50px;
+    background-color: #e6e6e6a6;
+}
+.login input::placeholder{
+    font-size: 13px;
+}
+.login button.btn{
+    font-variant: all-petite-caps;
+    letter-spacing: 2px;
+}
+.login .login-title{
+    margin-bottom: 2rem;
+}
+.login input:focus{
+    background-color: #e6e6e6c9 ;
+}
+
+.username-input img,
+.password-input img{
+    top: 10px;
+    left: 20px;
+    transition: all 200ms linear;
+}
+
+.username-input input:focus ~ img,
+.password-input input:focus ~ img{
+    left: 15px;
+}
+
+#password-error,
+#confirm-password-error{
+    top: 38px;
+    left: 30px;
+    font-variant: all-petite-caps;
+    color: rgba(255, 0, 0, 0.692);
+    letter-spacing: 1px;
+    transform: scale(1);
+}
+
+nav.navbar ul li a{
+    font-size: 20px;
+}
+
+@media (max-width:450px) {
+    input{
+        width: 260px !important;
+    }
+    .login .login-body{
+        padding: 20px 30px !important;
+    }
+}
+
+@media (max-width:380px) {
+    input{
+        width: 240px !important;
+    }
+    .login .login-body{
+        padding: 20px !important;
+    }
+}
+
+@media (max-width:750px) {
+    nav.navbar{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
