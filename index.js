@@ -1,5 +1,5 @@
 (async function () {
-    const apiUrl = 'http://jsonplaceholder.typicode.com/comments/?_limit=15';
+    const apiUrl = 'https://jsonplaceholder.typicode.com/comments/?_limit=15';
 
     var comments = await fetch(apiUrl)
         .then(response => {
