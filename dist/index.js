@@ -1,5 +1,5 @@
 (async function () {
-    const apiUrl = 'https://jsonplaceholder.typicode.com/comments/?_limit=15';
+    const apiUrl = 'https://jsonplaceholder.org/posts?id=10';
 
     var comments = await fetch(apiUrl)
         .then(response => {
@@ -16,6 +16,7 @@
             console.error('There was a problem with the fetch operation:', error);
         });
 
+        console.log(comments)
 
     await comments.forEach(cmt => {
         let card = document.createElement('div');
