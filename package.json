@@ -1,0 +1,26 @@
+{
+  "name": "package.json",
+  "version": "1.2.7",
+  "description": "Senchola Front End JavaScript Task (10-11-23)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sakthivel-Selvam-MEAN-Developer/Senchola-JavaScript.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Sakthivel Selvam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sakthivel-Selvam-MEAN-Developer/Senchola-JavaScript/issues"
+  },
+  "homepage": "https://github.com/Sakthivel-Selvam-MEAN-Developer/Senchola-JavaScript#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "gh-pages": "^6.0.0"
+  }
+}
